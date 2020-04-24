@@ -8,12 +8,18 @@ class ShopPage extends React.Component {
     super(props);
 
     this.state = {
-      collections: SHOP_DATA
+      collections: SHOP_DATA,
+      searchField: ''
     };
   }
 
   render() {
-      const {collections} = this.state;
+
+      const { collections } = this.state;
+    //   const filteredItems = collections.filter( collection => {
+    //     return collection.items.name.toLowerCase().includes(searchField.toLowerCase())
+    //   });
+
       return (
           <div className='shop-page'>
             {
